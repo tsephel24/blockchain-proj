@@ -92,11 +92,11 @@ def ethTransfer(address, amountInEther):
             'nonce': nonce,
             'to': targetAccount,
             'value': value,
-            'gas': 2000000,
+            'gas': 50000,
             'gasPrice': gasPrice,
             'chainId': 5
         }
-
+        print("made it to here - transaction built")
         #  sign the tx
         signed_tx = web3.eth.account.sign_transaction(tx, privateKey)
 
